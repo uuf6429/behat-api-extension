@@ -24,18 +24,18 @@
   ],
   "support": {
     "source": "https://github.com/imbo/behat-api-extension",
-    "docs": "http://behat-api-extension.readthedocs.io/",
+    "docs": "https://behat-api-extension.readthedocs.io/",
     "issues": "https://github.com/imbo/behat-api-extension/issues"
   },
   "require": {
     "php": ">=8.3",
-    "ext-json": "*",
     "beberlei/assert": "^3.3",
     "behat/behat": "^3.8",
     "firebase/php-jwt": "^6.4",
     "guzzlehttp/guzzle": "^7.3"
   },
   "require-dev": {
+    "ext-json": "*",
     "friendsofphp/php-cs-fixer": "^3.70",
     "imbo/imbo-coding-standard": "^2.0",
     "phpstan/extension-installer": "^1.4",
@@ -47,6 +47,9 @@
     "slim/slim": "^4.7",
     "symfony/process": "^7.2",
     "tuupola/slim-basic-auth": "^3.3"
+  },
+  "suggest": {
+    "ext-json": "Needed for testing JSON-based APIs"
   },
   "autoload": {
     "psr-4": {
